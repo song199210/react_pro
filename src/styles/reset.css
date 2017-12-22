@@ -1,0 +1,10 @@
+html,body {
+    padding:0px;
+    margin:0px;
+    color:#333;
+}
+ul,li {
+    padding:0px;
+    margin:0px;
+    list-style: none;
+}
