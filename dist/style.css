@@ -1,0 +1,98 @@
+html,body {
+    padding:0px;
+    margin:0px;
+    color:#333;
+}
+ul,li {
+    padding:0px;
+    margin:0px;
+    list-style: none;
+}.container {
+    border:1px solid #f00;
+}
+
+/*登录界面CSS*/
+.loginBox {
+    width:320px;
+    border:1px solid #ddd;
+    margin:60px auto;
+    padding:30px;
+}
+.loginBox h3 {
+    margin-top:0px;
+    text-align: center;
+}
+.formGroup {
+    font-size: 0px;
+    margin-top:10px;
+}
+.formGroup label {
+    width:70px;
+    display: inline-block;
+    font-size: 14px;
+}
+.formGroup input {
+    width:calc(100% - 72px);
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.btnGroup {
+    margin-top:30px;
+    text-align: right;
+    position: relative;
+}
+.btnGroup button.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin:0px 5px;
+}
+.btnGroup button.btn:last-child {
+    margin-right: 0px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+.textGroup {
+    position: absolute;
+    left: 0px;
+    font-size:12px;
+    margin-top:6px;
+    margin-left:10px;
+}
+.textGroup>a {
+    margin:0px 4px;
+}
+/*# sourceMappingURL=style.css.map*/
