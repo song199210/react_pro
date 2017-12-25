@@ -27,6 +27,7 @@ export default class Login extends React.Component {
         window.localStorage.setItem("email","");
     }
     LoginFetch(){
+        const _that=this;
         const urlApi=`/api/login`;
         let sendData=Object.assign({},this.state);
         if(sendData.username == "" || sendData.pwd == ""){
@@ -41,7 +42,14 @@ export default class Login extends React.Component {
             },
             body:JSON.stringify(sendData)
         }).then((result)=>{
-            console.log(result);
+            result.json().then((res)=>{
+                if(res.status){
+                    _that.props.history.push("/home/article_list");
+                    console.log(_that)
+                }
+            }).catch((err)=>{
+                console.log(err);
+            })
         });
     }
     render(){

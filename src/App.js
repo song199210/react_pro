@@ -5,6 +5,9 @@ import styles from "./styles/style.css";
 import Login from "./views/Login";
 import Regin from "./views/Regin";
 import ToEmail from "./views/ToEmail";
+import Home from "./views/Home";
+
+import ArticleList from "./views/ArticleList"
 const App=(props)=>{
     return (
         <div className={styles.container}>
@@ -14,6 +17,9 @@ const App=(props)=>{
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/regin" component={Regin}/>
                     <Route exact path="/toEmail" component={ToEmail} />
+                    <Route exact path="/home" component={Home}>
+                        <Route exact path="./article_list" component={ArticleList} />
+                    </Route>
                 </Switch>
             </Router>
         </div>

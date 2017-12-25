@@ -24,10 +24,11 @@ router.post("/toEmail",(req,res,next)=>{//注册url模块
     const body=req.body;
     emailActive(body.email,body.account);
 });
-router.get("/emailActive",(req,res,next)=>{//注册url模块
-    const body=req.body;
-});
-router.post("/active",(req,res,next)=>{//激活账号url模块
+//暂时不实现邮箱验证；数据库和服务均在本地
+// router.get("/emailActive",(req,res,next)=>{//发送邮箱验证码
+//     const body=req.body;
+// });
+// router.post("/active",(req,res,next)=>{//激活账号url模块
 
-});
+// });
 module.exports=router;
