@@ -6,7 +6,7 @@ const ExtractTextPlugin=require("extract-text-webpack-plugin");
 module.exports={
     entry:__dirname+"/main.js",
     output:{
-        filename:"[name]-[hash].js",
+        filename:"[name].js",
         path:path.resolve(__dirname,"dist")
     },
     devtool: "source-map",

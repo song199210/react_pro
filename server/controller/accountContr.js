@@ -34,7 +34,7 @@ let accountSql={
     },
     regin_insert:function(insertData){//用户注册Controller
         let promise=new Promise((resolve,reject)=>{
-            insertData['isactive']=0;
+            insertData['isactive']=1;//暂时关闭账号注册激活功能
             let insertDataArr=[];
             for(let item in insertData){
                 insertDataArr.push(insertData[item]);
